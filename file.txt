@@ -1,0 +1,21 @@
+pwd 
+mkdir Demo
+cd Demo
+touch file1.txt file2.txt
+nano file1.txt
+cat file1.txt
+cp file1.txt file2.txt
+mkdir Demo1
+cd Demo1
+mv file2.txt Demo1
+cd ..
+rm -r Demo1
+touch file3.csv
+nano file3.csv
+find *.txt
+find -size +5M
+echo hello disha
+cat file3.csv | grep disha | awk '{print }'
+cat file3.csv | grep disha | awk '{print $2}'
+cat file3.csv | grep disha |awk '{print $1 " " $2}'
+awk '$2>15 {print $1}'
